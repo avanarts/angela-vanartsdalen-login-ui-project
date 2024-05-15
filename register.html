@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela's Login UI Project - Register Page</title>
+    <link rel="stylesheet" href="login-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container column">
+        <form id="register-form">
+                <h1>Register</h1>
+                <input type="text" placeholder="Username" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <input type="password" placeholder="Re-enter Password" id="reenter-password" onkeyup="validatePassword()" required>
+                <button type="submit" id="register-btn">Register</button>
+                <p id="validate-password"></p>
+                <div class="row"><p><a href="./login.html">Return to Login</a></p></div>
+        </form>
+
+        <div class="row">
+            <p>Follow us on socials!</p>
+        </div>
+        <div class="row">
+            <a href="#"><i class="bi bi-instagram socials"></i></a>
+            <a href="#"><i class="bi bi-facebook socials"></i></a>
+            <a href="#"><i class="bi bi-twitter socials"></i></a>
+        </div>
+</body>
+</html>
+<script src="app.js"></script>
